@@ -1,0 +1,202 @@
+.ellipse1{
+    background: #6c1f93;
+    -webkit-filter: blur(170px);
+    filter: blur(170px);
+    height: 400px;
+    left: -10%;
+    position: absolute;
+    top: -250px;
+    width: 45vw;
+    z-index: -1;
+  }
+  
+  .ellipse2{
+    background: #360498;
+    -webkit-filter: blur(150px);
+    filter: blur(150px);
+    height: 45.875vw;
+    left: 75%;
+    position: absolute;
+    top: 405px;
+    width: 350px;
+    overflow: hidden;
+    z-index: -1;
+  }
+  
+  
+  .ellipse3{
+    background: #0cf;
+    -webkit-filter: blur(230px);
+    filter: blur(230px);
+    height: 38vw;
+    left: -10%;
+    position: absolute;
+    top: 1645px;
+    width: 38vw;
+    z-index: -1;
+  }
+  
+  .ellipse4{
+    width: 42vw;
+    height: 42vw;
+    position: absolute;
+    background: #360498;
+    -webkit-filter: blur(150px);
+    filter: blur(150px);
+    left: -5%;
+    top: 3501px;
+    z-index: -1;
+  }
+  
+  
+  .ellipse5{
+    background: #0cf;
+    -webkit-filter: blur(220px);
+    filter: blur(220px);
+    height: 38vw;
+    left: 75%;
+    position: absolute;
+    top: 4719px;
+    width: 38vw;
+    z-index: -1;
+  }
+
+  .main-timeline{ font-family: 'Poppins', sans-serif; }
+.main-timeline:after{
+    content: '';
+    display: block;
+    clear: both;
+}
+.main-timeline .timeline{
+    width: 50%;
+    padding: 60px 0 0 0;
+    margin: 0 5px 25px 0;
+    margin-bottom: 40px !important;
+    float: left;
+}
+.main-timeline .timeline-content{
+    min-height: 100px;
+    padding: 0 15px 0 0;
+    border-right: 2px solid var(--main-color);
+    display: block;
+    position: relative;
+}
+.main-timeline .timeline-content:hover{ text-decoration: none; }
+.main-timeline .timeline-content:before,
+.main-timeline .timeline-content:after{
+    content: '';
+    background-color: var(--main-color);
+    height: 6px;
+    width: 6px;
+    border-radius: 50%;
+    position: absolute;
+    right: -4px;
+    top: 0;
+}
+.main-timeline .timeline-content:after{
+    top: auto;
+    bottom: 0;
+}
+.main-timeline .timeline-year{
+    color: #fff;
+    background-color: var(--main-color);
+    font-size: 12px;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    padding: 1px 20px 1px 50px;
+    position: absolute;
+    right: -2px;
+    top: -60px;
+    z-index: 1;
+    clip-path: polygon(15% 0, 100% 0, 100% 100%, 15% 100%, 0 50%);
+}
+.main-timeline .title{
+    color: var(--main-color);
+    font-size: 20px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-transform: capitalize;
+    margin: 0 0 7px;
+}
+.main-timeline .description{
+    color: #fff;
+    font-size: 13px;
+    font-weight: 500;
+    line-height: 22px;
+    text-align: left;
+    letter-spacing: 0.5px;
+    margin: 0;
+}
+.main-timeline .timeline:nth-child(even){
+    margin: 0 0 25px 5px;
+    float: right;
+}
+.main-timeline .timeline:nth-child(even) .timeline-content{
+    text-align: left;
+    padding: 0 0 0 15px;
+    border-left: 2px solid var(--main-color);
+    border-right: none;
+}
+.main-timeline .timeline:nth-child(even) .timeline-content:before,
+.main-timeline .timeline:nth-child(even) .timeline-content:after{
+    right: auto;
+    left: -4px;
+}
+.main-timeline .timeline:nth-child(even) .timeline-year{
+    right: auto;
+    left: -2px;
+    clip-path: polygon(0 0, 85% 0, 100% 50%, 85% 100%, 0 100%);
+}
+.main-timeline .timeline:nth-child(2){ --main-color: #8E45B6; }
+.main-timeline .timeline:nth-child(3){ --main-color: #FF8000; }
+.main-timeline .timeline:nth-child(4){ --main-color: #FE3B0D; }
+.main-timeline .timeline:nth-child(5){ --main-color: #8E45B6; }
+.main-timeline .timeline:nth-child(6){ --main-color: #FF8000; }
+.main-timeline .timeline:nth-child(7){ --main-color: #FE3B0D; }
+@media screen and (max-width:767px){
+    .main-timeline .timeline,
+    .main-timeline .timeline:nth-child(even){
+        width: 100%;
+        margin: 0 0 25px;
+    }
+}
+.rounded-l-lg {
+    clip-path: polygon(0% 0%, 100% 0%, 85% 50%, 100% 100%, 0% 100%);
+}
+
+@keyframes slideInLeft {
+    0% {
+        opacity: 0;
+        transform: translateX(-100%);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes slideInRight {
+    0% {
+        opacity: 0;
+        transform: translateX(100%);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+.timeline {
+    opacity: 0;
+    transition: opacity 1s ease-in-out, transform 1s ease-in-out;
+}
+
+.timeline.show-left {
+    animation-name: slideInLeft;
+    opacity: 1;
+}
+
+.timeline.show-right {
+    animation-name: slideInRight;
+    opacity: 1;
+}
