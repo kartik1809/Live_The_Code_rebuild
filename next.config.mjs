@@ -1,7 +1,8 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   images: {
-    domains: ['assets.aceternity.com'],
+    domains: ['assets.aceternity.com', "api.microlink.io"],
+    
   },
   // Disabling the error overlay in development mode
   devIndicators: {

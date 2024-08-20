@@ -200,3 +200,8 @@
     animation-name: slideInRight;
     opacity: 1;
 }
+
+.hero{
+    position: relative;
+    z-index: 2;
+}
