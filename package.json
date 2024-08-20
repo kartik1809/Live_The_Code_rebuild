@@ -9,6 +9,7 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@react-three/fiber": "^8.17.5",
     "@tabler/icons-react": "^3.12.0",
     "@tsparticles/engine": "^3.5.0",
     "@tsparticles/react": "^3.0.0",
@@ -20,10 +21,13 @@
     "next": "14.2.5",
     "react": "^18",
     "react-dom": "^18",
+    "simplex-noise": "^4.0.3",
     "tailwind-merge": "^2.5.2",
-    "tailwindcss-animate": "^1.0.7"
+    "tailwindcss-animate": "^1.0.7",
+    "three": "^0.167.1"
   },
   "devDependencies": {
+    "@types/three": "^0.167.1",
     "eslint": "^8",
     "eslint-config-next": "14.2.5",
     "postcss": "^8",

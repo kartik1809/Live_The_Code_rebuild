@@ -1,6 +1,7 @@
 import { cn } from "@/lib/utils";
 import { CardBody, CardContainer, CardItem } from "./3d-card";
 import { Cover } from "./cover";
+
 export const BentoGrid = ({
   className,
   children
@@ -29,21 +30,20 @@ export const BentoGridItem = ({
         "row-span-1 rounded-xl group/bento hover:shadow-xl transition duration-200 shadow-input shadow-none px-4 bg-black border-white/[0.2] border justify-between flex flex-col ",
         className
       )}>
-
-      <CardContainer className="group-hover/bento:translate-x-2 min-h-fit transition duration-200  flex flex-col">
-        {header}
-        <Cover>
+      
+        <CardContainer className="group-hover/bento:translate-x-2 min-h-fit transition duration-200  flex flex-col">
+          {header}
+          <Cover>
+            <CardItem
+              className="font-sans font-bold text-xl text-neutral-200 mb-2 mt-2">
+              {title}
+            </CardItem>
+          </Cover>
           <CardItem
-            className="font-sans font-bold text-xl text-neutral-200 mb-2 mt-2">
-            {title}
+            className="font-sans font-normal  text-xs text-neutral-300">
+            {description}
           </CardItem>
-        </Cover>
-        <CardItem
-          className="font-sans font-normal  text-xs text-neutral-300">
-          {description}
-        </CardItem>
-      </CardContainer>
-
+        </CardContainer>
       {/* <div className="hidden md:block">
       <Meteors number={20} />
       </div> */}
