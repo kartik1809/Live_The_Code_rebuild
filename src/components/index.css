@@ -164,6 +164,18 @@
     clip-path: polygon(0% 0%, 100% 0%, 85% 50%, 100% 100%, 0% 100%);
 }
 
+@media screen and (min-width: 1024px) {
+    .description{
+        font-size: 18px !important;
+    }
+    .title{
+        font-size: 24px !important;
+    }
+    .timeline-year{
+        font-size: 16px !important;
+    }
+}
+
 @keyframes slideInLeft {
     0% {
         opacity: 0;

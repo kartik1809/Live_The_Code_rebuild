@@ -35,7 +35,7 @@ export default function RootLayout({ children }) {
         <MacbookScrollDemo />
         <About />
         <Themes />
-        <h2 className="text-4xl sm:text-5xl  text-[aliceblue] text-center mt-12 -mb-8">Our Sponsors</h2>
+        <h2 className="text-4xl sm:text-5xl  text-[aliceblue] text-center mt-12 -mb-8">Our Previous Sponsors</h2>
         <Sponsors />
         <Collaborators />
         <CTA />
