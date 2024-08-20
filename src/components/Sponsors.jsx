@@ -4,7 +4,7 @@ import { ContainerScroll } from './ui/container-scroll-animation'
 import Image from 'next/image'
 const Sponsors = () => {
     return (
-        <div className='mt-32'>
+        <div className='mt-32' id='sponsors'>
             <h3 className='text-white md:text-3xl text-2xl text-center font-semibold'>Platinum</h3>
             
             <ContainerScroll >

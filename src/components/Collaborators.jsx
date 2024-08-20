@@ -20,7 +20,7 @@ const Collaborators = () => {
 
     return (
         
-        <div>
+        <div id='collaborators'>
             <h1 className='text-center text-3xl text-white md:text-4xl lg:text-5xl'>Collaborators</h1>
             <div className='flex justify-center items-center'>
                 <div className='grid grid-cols-2 p-8 gap-8 md:grid-cols-3 lg:grid-cols-5 lg:p-24 lg:gap-8'>

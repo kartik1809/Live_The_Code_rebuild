@@ -13,6 +13,9 @@ import Sponsors from "@/components/Sponsors";
 import Collaborators from "@/components/Collaborators";
 import CTA from "@/components/CTA";
 import Footer from "@/components/Footer";
+import Contact from "@/components/ContactCard";
+
+
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata = {
@@ -36,7 +39,9 @@ export default function RootLayout({ children }) {
         <Sponsors />
         <Collaborators />
         <CTA />
+        <Contact />
         <Footer />
+        
 
         <ShootingStars />
         <StarsBackground />
