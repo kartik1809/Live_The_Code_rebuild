@@ -21,6 +21,7 @@ const inter = Inter({ subsets: ["latin"] });
 export const metadata = {
   title: "Live The Code 3.0",
   description: "Live the code 3.0 hackathon oraganized by GFG ADGIPS",
+  
 };
 
 export default function RootLayout({ children }) {
