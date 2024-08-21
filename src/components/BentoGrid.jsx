@@ -34,11 +34,6 @@ const Skeleton = () => (
 );
 const items = [
   {
-    title: "SUSTAINABLITY",
-    description: "This event challenges participants to develop creative solutions that promote sustainability and address pressing environmental issues.",
-    header: <div className="flex justify-center items-center"><Image src={'/1.png'} width={150} height={150}/></div>,
-  },
-  {
     title: "FINTECH",
     description: "Disrupt finance with digital solutions like mobile banking, blockchain applications, and automated advisors.",
     header: <div className="flex justify-center items-center"><Image src={'/2.png'} width={150} height={150}/></div>,
@@ -75,4 +70,10 @@ const items = [
     header: <div className="flex justify-center items-center"><Image src={'/9.png'} width={150} height={150}/></div>,
 
   },
+  {
+    title: "Explore More",
+    description: <a href="https://get.tech/blog/hackathon-ideas/" className="text-xl">Click Here</a>,
+    header: <div className="flex justify-center items-center mt-12"><Image src={'/alarm.png'} width={100} height={100}/></div>,
+
+  }
 ];

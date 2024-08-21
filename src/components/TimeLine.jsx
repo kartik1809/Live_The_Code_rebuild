@@ -44,7 +44,7 @@ const TimeLine = () => {
                             <div className="absolute left-1/2 transform -translate-x-1/2 h-full border-l border-gray-300"></div>
                             <div className="timeline" ref={(el) => timelineRef.current[0] = el}>
                                 <a href="#" className="timeline-content">
-                                    <div className="timeline-year bg-blue-500 text-white rounded-full w-48 h-12 lg:w-[250px] flex items-center justify-center">10 August 2024</div>
+                                    <div className="timeline-year bg-blue-500 text-white rounded-full w-48 h-12 lg:w-[250px] flex items-center justify-center">20 August 2024</div>
                                     <h3 className="title text-xl font-semibold">Registration Begins</h3>
                                     <p className="description text-gray-600 lg:text-xl">
                                         Kickstart your journey! Register now to secure your spot and be part of an exhilarating hackathon adventure.
@@ -62,7 +62,7 @@ const TimeLine = () => {
                             </div>
                             <div className="timeline" ref={(el) => timelineRef.current[2] = el}>
                                 <a href="#" className="timeline-content">
-                                    <div className="timeline-year bg-blue-500 text-white rounded-full lg:w-[250px] w-48 h-12 flex items-center justify-center">11 September 2024</div>
+                                    <div className="timeline-year bg-blue-500 text-white rounded-full lg:w-[250px] w-48 h-12 flex items-center justify-center">09 September 2024</div>
                                     <h3 className="title text-xl font-semibold">Orientation</h3>
                                     <p className="description text-gray-600">
                                         Prepare for the challenge ahead! Attend the orientation to understand the event details and meet fellow participants.
@@ -71,7 +71,7 @@ const TimeLine = () => {
                             </div>
                             <div className="timeline" ref={(el) => timelineRef.current[3] = el}>
                                 <a href="#" className="timeline-content">
-                                    <div className="timeline-year bg-blue-500 text-white rounded-full lg:w-[250px] w-48 h-12 flex items-center justify-center">13 September 2024</div>
+                                    <div className="timeline-year bg-blue-500 text-white rounded-full lg:w-[250px] w-48 h-12 flex items-center justify-center">12,13 September 2024</div>
                                     <h3 className="title text-xl font-semibold">24 Hour Coding Period</h3>
                                     <p className="description text-gray-600">
                                         Dive into the coding marathon! Collaborate, innovate, and create your project in a thrilling 24-hour coding session.
