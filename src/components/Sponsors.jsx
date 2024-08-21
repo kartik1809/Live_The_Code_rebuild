@@ -10,7 +10,7 @@ const Sponsors = () => {
             <ContainerScroll >
                 <div className='grid grid-rows-1 grid-cols-3  gap-4 p-2 md:gap-12 justify-center items-center'>
                     <Image src='/dataverse.png' width={200} height={200} alt='sponsor' />
-                    <Image src='/devfolio.png' width={200} height={200} alt='sponsor' />
+                    <Image src='/Devfolio.png' width={200} height={200} alt='sponsor' />
                     <Image src='/polygon.png' width={200} height={200} alt='sponsor' />
 
                 </div>
@@ -27,7 +27,7 @@ const Sponsors = () => {
             <ContainerScroll >
                 <div className='grid grid-rows-1 grid-cols-3 p-2  gap-2 md:gap-12 justify-center items-center'>
                     <Image src='/filecoin.png' width={200} height={200} alt='sponsor' />
-                    <Image src='/replit.png' width={200} height={200} alt='sponsor' />
+                    <Image src='/Replit.png' width={200} height={200} alt='sponsor' />
                     <Image src='/solana.png' width={200} height={200} alt='sponsor' />
 
                 </div>
